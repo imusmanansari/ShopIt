@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.LoginSignUp.LogInActivity">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="117dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_horizontal|top"
+        android:text="@string/sign_in"
+        android:textAppearance="@style/activity_name_style" />
+
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/et_textStyle"
+        android:layout_width="354dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="42dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/et_textStyle"
+        android:layout_width="354dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="password"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="42dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#80000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="149dp"
+        android:layout_marginTop="19dp"
+        android:clickable="true"
+        android:gravity="center_horizontal|top"
+        android:text="@string/forgot_pass"
+        android:textAppearance="@style/clickable_text_style" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="149dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/dont_have_account"
+        android:textAppearance="@style/clickable_text_style" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_signIn"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#F1C40F"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        />
+
+</LinearLayout>
